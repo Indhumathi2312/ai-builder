@@ -1,0 +1,92 @@
+import { PricingPlan, CompareFeatureItem } from "@/types";
+
+export const pricingPlans: PricingPlan[] = [
+  {
+    id: "premium",
+    name: "Premium",
+    badge: "75% off",
+    originalPrice: "£11.99",
+    currentPrice: "£2.99",
+    period: "/mo",
+    renewPrice: "Get 48 months for £143.52 (regular price £575.52). Renews at £10.99/mo.",
+    discountBadge: "75% off",
+    buttonText: "Choose plan",
+    features: [
+      "Create up to 3 websites",
+      "2 mailboxes per website - free for 1 year",
+      "Custom domain - free for 1 year",
+      "5 AI credits for website and app creation",
+      "400+ website templates",
+      "Fast and secure web hosting",
+      "Get chatbot support from Hostinger Agent",
+    ],
+  },
+  {
+    id: "unlimited",
+    name: "Unlimited",
+    badge: "Special offer - 73% off",
+    originalPrice: "£14.99",
+    currentPrice: "£3.99",
+    period: "/mo",
+    renewPrice: "Get 48 months for £191.52 (regular price £719.52). Renews at £13.99/mo.",
+    discountBadge: "Special offer - 73% off",
+    buttonText: "Choose plan",
+    isPopular: true,
+    features: [
+      "Unlimited websites",
+      "Unlimited mailboxes per website - free for 1 year",
+      "Custom domain - free for 1 year",
+      "15 AI credits for website and app creation",
+      "400+ website templates",
+      "Fast and secure web hosting",
+      "Priority 24/7 expert support",
+      "500 credits for AI agents",
+      "Sell online with integrated ecommerce",
+      "Email marketing with Reach",
+    ],
+  },
+  {
+    id: "cloud-startup",
+    name: "Cloud Startup",
+    badge: "65% off",
+    originalPrice: "£22.99",
+    currentPrice: "£7.99",
+    period: "/mo",
+    renewPrice: "Get 48 months for £383.52 (regular price £1103.52). Renews at £20.99/mo.",
+    discountBadge: "65% off",
+    buttonText: "Choose plan",
+    features: [
+      "Unlimited websites",
+      "Unlimited mailboxes per website - free for 1 year",
+      "Custom domain - free for 1 year",
+      "15 AI credits for website and app creation",
+      "400+ website templates",
+      "Fast and secure web hosting",
+      "Priority 24/7 expert support",
+      "1000 credits for AI agents",
+      "Sell online with integrated ecommerce",
+      "Email marketing with Reach",
+    ],
+  },
+];
+
+export const compareFeaturesData: CompareFeatureItem[] = [
+  {
+    category: "General Features",
+    features: [
+      { name: "Websites & AI Apps", premium: "3", business: "Unlimited", cloud: "Unlimited" },
+      { name: "NVMe Storage", premium: "100 GB", business: "200 GB", cloud: "200 GB" },
+      { name: "Free Domain (1st year)", premium: true, business: true, cloud: true },
+      { name: "Free SSL Certificates", premium: true, business: true, cloud: true },
+    ],
+  },
+  {
+    category: "AI Capabilities",
+    features: [
+      { name: "AI Builder Assistant", premium: true, business: true, cloud: true },
+      { name: "AI Web App Engine", premium: "Basic", business: "Advanced", cloud: "Enterprise" },
+      { name: "AI Credits", premium: "5", business: "15", cloud: "15" },
+      { name: "AI Agent Credits", premium: false, business: "500", cloud: "1000" },
+    ],
+  },
+];
